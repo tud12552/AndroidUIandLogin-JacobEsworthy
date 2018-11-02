@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">AndroidUIandLogin-JacobEsworthy</string>
     <string name="loginScreenStr">Login/Sign Up</string>
+    <string name="loginImageViewDescriptStr">BeachView</string>
+    <string name="LoginEmailAutoFillStr">Email or ID</string>
+    <string name="LoginPasswordAutoFillStr">Password</string>
+    <string name="LoginBtnStr">login</string>
+    <string name="SignUpBtnStr">sign up</string>
+    <string name="LoginTextViewStr">or</string>
+    <string name="SignUpActivity">SignUp</string>
+    <string name="LoginActivity">Logged In!</string>
 </resources>
