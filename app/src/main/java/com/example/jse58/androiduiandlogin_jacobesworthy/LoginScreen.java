@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LoginScreen extends AppCompatActivity {
 
@@ -33,7 +34,14 @@ public class LoginScreen extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                startActivity(new Intent(LoginScreen.this, LoginSuccessActivity.class));
+                Toast.makeText(getApplicationContext(),"@string/ToastToSuccessLoginStr",Toast.LENGTH_SHORT).show();
+
+                Intent intentLoginSuccess = new Intent(LoginScreen.this, LoginSuccessActivity.class);
+                intentLoginSuccess.putExtra("NAME", "Jacob");
+                intentLoginSuccess.putExtra("SURNAME", "Esworthy");
+                intentLoginSuccess.putExtra("BIRTHDAY", "April 20, 1993");
+
+                startActivity(intentLoginSuccess);
             }
         });
     }
