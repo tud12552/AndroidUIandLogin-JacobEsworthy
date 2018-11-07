@@ -9,5 +9,4 @@
     <string name="LoginTextViewStr">or</string>
     <string name="SignUpActivity">SignUp</string>
     <string name="LoginActivity">Logged In!</string>
-    <string name="ToastToSuccessLoginStr">Login Button Pressed</string>
 </resources>

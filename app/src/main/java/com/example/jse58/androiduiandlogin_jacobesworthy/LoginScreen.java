@@ -34,7 +34,7 @@ public class LoginScreen extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Toast.makeText(getApplicationContext(),"@string/ToastToSuccessLoginStr",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Login Button Pressed",Toast.LENGTH_SHORT).show();
 
                 Intent intentLoginSuccess = new Intent(LoginScreen.this, LoginSuccessActivity.class);
                 intentLoginSuccess.putExtra("NAME", "Jacob");
