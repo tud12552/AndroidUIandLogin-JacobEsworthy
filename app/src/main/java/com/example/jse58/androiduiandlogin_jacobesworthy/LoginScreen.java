@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 public class LoginScreen extends AppCompatActivity {
 
     private ImageView mLoginImgView = null;
@@ -24,6 +26,7 @@ public class LoginScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
 
+        mTxtViewOr = (TextView)findViewById(R.id.txtViewLoginSuccess);
         mLoginImgView = (ImageView)findViewById(R.id.imageViewLogin);
         mEditTxtEmail = (EditText)findViewById(R.id.editTxtEmail);
         mEditTxtPswd = (EditText) findViewById(R.id.editTxtPassowrd);
