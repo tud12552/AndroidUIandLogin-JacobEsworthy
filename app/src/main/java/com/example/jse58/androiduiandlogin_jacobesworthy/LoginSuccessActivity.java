@@ -16,6 +16,6 @@ public class LoginSuccessActivity extends AppCompatActivity {
         mTxtViewWelcomeMessage = findViewById(R.id.txtViewLoginSuccess);
 
         StringBuilder strBuild = new StringBuilder();
-        strBuild.append()))
+        //strBuild.append()))
     }
 }

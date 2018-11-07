@@ -24,11 +24,11 @@ public class LoginScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
 
-        mLoginImgView = findViewById(R.id.imageViewLogin);
-        mEditTxtEmail = findViewById(R.id.editTxtEmail);
-        mEditTxtPswd = findViewById(R.id.editTxtPassowrd);
-        mBtnLogin = findViewById(R.id.BtnLogin);
-        mBtnSignUp = findViewById(R.id.BtnSignUp);
+        mLoginImgView = (ImageView)findViewById(R.id.imageViewLogin);
+        mEditTxtEmail = (EditText)findViewById(R.id.editTxtEmail);
+        mEditTxtPswd = (EditText) findViewById(R.id.editTxtPassowrd);
+        mBtnLogin = (Button)findViewById(R.id.BtnLogin);
+        mBtnSignUp = (Button) findViewById(R.id.BtnSignUp);
 
         mBtnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,5 +44,24 @@ public class LoginScreen extends AppCompatActivity {
                 startActivity(intentLoginSuccess);
             }
         });
+
+        mBtnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"SignUp Button Pressed",Toast.LENGTH_SHORT).show();
+
+                Intent intentSignUp = new Intent(LoginScreen.this,SignUpActivity.class);
+                startActivity(intentSignUp);
+            }
+        });
+    }
+
+    @Override
+    protected void onResume()
+    {
+        super.onResume();
+
+        mEditTxtEmail.setText("");
+        mEditTxtPswd.setText("");
     }
 }
